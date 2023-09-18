@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+
+    <div class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+            <div class="container-fluid nav" style=" background-color: #0b1474;">
+
+                <div class="navbar-brand" >
+                    <img class="navimg"
+                        src="data:image/jpeg;base64,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" />
+                </div>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " >
+
+                    <div class="spacing">
+                        <ul class="navbar-nav border-end pe-4">
+
+                            <li class="nav-item dropdown" >
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Solutions
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Clients
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Resources
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Company
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="spacing">
+                        <ul class="navbar-nav ">
+                            <a class="nav-link ms-2" href="#">sign In</a>
+
+                            <button type="button" class="btn request me-0.4 mt-1  text-white ">
+                                Request a demo
+                            </button>
+
+                            <button type="button" class="btn EN ms-3 mt-1 p-1"> <i class="fa fa-thin fa-globe"
+                                    style="color: #ffffff;"></i>EN</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+<div class="container-fluid firstpart">
+    <div class="row  d-flex justify-content-center  text-white ">
+
+<div class="col-4 list mt-4 pe-3">
+    <div  class=" employee mt-3 p-2 rounded text-align-center">
+        <span > EMPLOYEE  ENGAGEMENT  PLATFORM</span>
+    </div>
+
+    <h2 class="h2 mt-3  ">Drive Holistic Employee Engagement Globally</h2>
+
+    <ul class="list-group mt-4  ">
+       
+        <li class="list-group-item">
+            
+            Reward & recognize employees with
+            <a class="link-underline-light listlink" href="#">Vantage Rewards</a></li>
+            <li class="list-group-item">
+           
+                Ensure employee wellness with 
+                <a class="link-underline-light listlink" href="#">Vantage Fit</a></li>
+                <li class="list-group-item">
+           
+                    RGet real-time anonymous employee feedback with 
+                    <a class="link-underline-light listlink" href="#">Vantage Pulse</a></li>
+                    <li class="list-group-item">
+           
+                        Offer exclusive corporate perks and discounts with 
+                        <a class="link-underline-light listlink" href="#">Vantage Perks</a></li>
+      </ul>
+
+      <div class="watch  mt-4">
+        <button type="button" class="btn btn-light me-1 rounded-pill text-white"><small>Request a demo</small></button>
+        <button type="button" class="btn btn-outline-danger rounded-pill text-white"><small>Watch video</small></button>
+      </div>
+</div>
+
+<div class="col-4 icons mt-5 ">
+
+    <div class="one   mt-5">
+        <div class="rounded-circle"></div>
+       </div>
+    
+       <div class="rounded-circle two tt">
+        <i class="fa fa-solid fa-heart-pulse kk" style="color: #de1212;"></i>
+       </div>
+       <div class="rounded-circle three tt">
+        <i class="fa fa-solid fa-chart-column kk" style="color: #ffffff;"></i>
+       </div>
+       <div class="rounded-circle four tt">
+        <i class="fa fa-solid fa-cart-shopping kk" style="color: #ffffff;"></i>
+       </div>
+       <div class="rounded-circle five tt">
+        <i class="fa fa-light fa-trophy kk" style="color: #ffffff;"></i>
+       </div>
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
